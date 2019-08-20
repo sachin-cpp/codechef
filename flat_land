@@ -1,0 +1,23 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+    int t=0,num=0;
+    cin>>t;
+    for(int i=0;i<t;i++)            //no. of iterations
+    {
+        cin>>num;
+        int count=0;
+        while(num>=1)
+        {
+            int n=sqrt(num);
+            num = num - (n*n) ;     //algo eg- [114-(100)]=[14-(9)]=[5-(4)]=1.
+            count++;                // count increases on every iteration.
+        }
+        cout<<count<<endl;
+    }
+
+    return 0;
+}

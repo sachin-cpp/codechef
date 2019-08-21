@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long int no=0,t;
+    cin>>no;
+    for(int i=0;i<no;i++)
+    {
+        cin>>t;
+        long long int  b=1,n=0,B=0;
+        
+        for(int j=0;j<t;j++)
+        {
+            if(b>=1 && t>2)
+            {
+                n=b;
+                b=0;
+                t=t-2;
+            }
+            if(n>=1 && t>8)
+            {
+                B=n;
+                n=0;
+                t=t-8;
+            }
+            if(B>=1 && t>16)
+            {
+                b=2*B;
+                B=0;
+                t=t-16;
+            }
+        }
+        cout<<b<<" "<<n<<" "<<B<<endl;
+        
+    }
+
+    return 0;
+}

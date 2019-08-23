@@ -1,0 +1,67 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t=0,n=0,sum_1=0,count=0;
+    float mean_1=0.0;
+    
+    cin>>t;
+    for(int i=0;i<t;i++)
+    {
+        cin>>n;
+        int A[n]={0};
+        for(int j=0;j<n;j++)
+        {
+            cin>>A[j];
+        }
+        
+        for(int j=0;j<n;j++)
+        {
+            sum_1+=A[j];
+        }
+        mean_1=sum_1/n;
+        if((mean_1) !=int (mean_1))
+        {
+            cout<<"Impossible_1"<<endl;
+            break;
+        }
+        
+        else
+        {
+            int j=0;
+            for( j=0;j<n;j++)
+            {
+               if(mean_1==A[j])
+               {
+                   //count++;
+                   cout<<A[j]<<endl;
+                   break;
+               }
+            }
+            {
+                if(mean_1 !=A[j])
+                {
+                    cout<<"Impossible_2"<<endl;
+                    break;
+                }
+            }
+            
+            /*if(count==1)
+               {
+                   cout<<A[j]<<endl;
+                   break;
+               }
+               
+               else if(count<1)
+               cout<<"Impossible"<<endl;
+               
+               else
+               {
+                   cout<<"1"<<endl;
+               }
+            */
+        }
+    }
+    return 0;
+}

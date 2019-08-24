@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int t=0,apples=0,boxes=0,x=0,count=0,j=0;
+    
+    cin>>t;
+    for(int i=1;i<=t;i++)
+    {
+        cin>>apples>>boxes;
+        //cout<<apples<<boxes;
+        int box_1[boxes]={0},box_2[boxes]={0};
+        x=apples/boxes;
+        while(j<apples)
+        {
+            //while(x<apples)
+            for(int k=1;k<=boxes;k++)
+            {
+                box_1[k] = box_1[k] + 1;
+                j++;
+                if(j>=apples)
+                {
+                    break;
+                }
+            }
+        }   
+        j=0;
+        
+        //for(;j<apples;  j += boxes;)
+        while(j<apples)
+        {
+            //while(x<apples)
+            for(int k=1;k<=boxes;k++)
+            {
+                box_2[k]=box_2[k]+boxes;
+                j += boxes;
+                if(j>=apples)
+                {
+                    break;
+                }
+            }
+            //j += boxes;
+        }
+        
+        for(int j=1;j<=boxes;j++)
+        {
+            if(box_1[j] = box_2[j])
+            {
+            count++;
+           // cout<<"no_1"<<"   j="<<j;
+            
+            }
+        }   
+        
+        
+         
+        if(count == boxes)
+        cout<<"NO"<<endl;
+        
+        else
+        cout<<"YES"<<endl;
+        
+        count=0;
+        
+        
+        
+        
+    }
+    
+    
+    return 0;
+}

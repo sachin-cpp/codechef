@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std
+
+int main()
+{
+    struct team
+    {
+        int score[10];
+        string name[10] ;
+    }
+    
+    team a;
+    team b;
+    team c;
+    team d;
+    
+    int p , q,
+    char u , v
+    
+    for(int i=0;i<13;i++)
+    {
+        
+        cin>>u>>p>>vs>>q>>v;
+        cin>>a.name[i]>>a.score[i]>>vs>>b.score>>b.name;
+        
+        if()
+        
+        
+        
+        
+        
+        
+    
+    }
+    return 0;
+}

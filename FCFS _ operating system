@@ -1,0 +1,85 @@
+#include <iostream>
+using namespace std;
+
+
+
+//void swap( int x, int y)
+//    {
+//        temp=A[i];
+//        A[i]=A[i+1];
+//        A[i+1]=temp;
+//    }
+    
+int main()
+{
+    
+    int processes =0 , temp =0 ;
+    
+    cout<<"total number of processes";
+    cin>>processes;
+    
+    int A[processes]={0} ,  B[processes]={0} ,P[processes]={0} ,tat[processes]={0} , wt[processes]={0} ;
+    
+    
+    
+    for(int i=0;i<processes;i++)
+    {
+        cin>>P[i]>>B[i]>>A[i];
+    }
+    
+    
+    for(int i=0;i<processes;i++)
+    {
+        for(int j=0;j<i;j++)
+        {
+       if(A[i]>A[i+1])
+        {
+            //swap(A[i],A[i+1]);
+            {
+                temp=A[i];
+                A[i]=A[i+1];
+                A[i+1]=temp;
+            }
+            //swap(B[i],B[i+1]);
+            {
+                temp=A[i];
+                A[i]=A[i+1];
+                A[i+1]=temp;
+            }
+            //swap(P[i],P[i+1]);
+            {
+                temp=A[i];
+                A[i]=A[i+1];
+                A[i+1]=temp;
+            }
+        }
+        }
+    }
+    
+    
+    
+    
+    for(int i=0;i<processes;i++)
+    {
+        for(int j=0;j<=i;j++)
+        {
+            tat[i]=tat[j] + B[j];
+        }
+        tat[i]=tat[i]-A[i];
+        cout<<tat[i]<<"tat"<<endl;
+        
+        
+        wt[i]=tat[i]-B[i];
+        cout<<wt[i]<<"wt"<<endl;
+    }
+    
+    for(int i=0;i<processes;i++)
+    {
+        cout<<P[i]<<endl;
+        //cout<<A[i]<<endl;
+        //cout<<B[i]<<endl;
+    }
+    
+
+    return 0;
+}

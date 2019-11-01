@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
+using namespace std ;
+int main()
+{
+    
+    int n ;
+    cin>>n;
+    while(n--)
+    {
+        float v,a,p,h;
+        cin>>p>>a;
+    
+        
+        h = (p/2 - sqrt(p*p/4 - 6*a)) /6;
+        
+        v = a*h/2 - ((p/4 - h)*h*h);
+        
+        //cout<<v<<endl;
+        printf("%.2f \n" , v);
+        
+    }
+    return 0;
+}

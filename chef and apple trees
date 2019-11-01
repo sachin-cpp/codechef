@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std ;
+
+int main()
+{
+    
+    int n,t;
+    cin >>n ;
+    while(n--)
+    {
+        cin>>t;
+        int count=0;
+        int a[t] = {0};
+        for(int i=0;i<t ;i++)
+        {
+            cin>>a[i];
+        }
+        
+        for(int i=0;i<t;i++)
+        {
+            for(int j=i+1 ; j<t ;j++)
+            {
+                if(a[i] == a[j])
+                {
+                count++;
+                break;
+                }
+            }
+        }
+        cout<<t-count<<endl;
+       
+    }
+    return 0;
+}
+

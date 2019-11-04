@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std ;
+int main()
+{
+    printf("Hello World");
+    
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n,k,sum=0,count=0;
+        
+        cin>>n>>k;
+        int A[n]={0};
+        for(int i=0;i<n;i++)
+        {
+            cin>>A[i];
+            sum+=A[i];
+        }
+        
+        
+        for(int i=0;i<n;i++)
+        {
+            
+            if( (A[i]+k) > (sum-A[i]))
+            {
+                count++;
+                cout<<A[i];
+            }
+            
+            
+        }
+        cout<<count<<endl;
+    }
+    return 0;
+}

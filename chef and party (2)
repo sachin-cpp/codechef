@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <iostream>
+using namespace std ;
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n=0;
+        cin>>n;
+        int A[n]={0};
+
+        for(int i=0;i<n;i++)
+        {
+            cin>>A[i];
+        }
+        int min_idx , count=0;
+        for(int i=0;i<n;i++)
+        {
+            for(int j=i+1;j<n;j++)
+            {
+                if(A[j]<A[i])
+                {
+                    if(A[j] <= i)
+                    {
+                        count++;
+                    }
+                }
+            }
+        }
+        cout<<count<<endl;
+    }
+    return 0;
+}

@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <iostream>
+#include <math.h>
+using namespace std ;
+int main()
+{
+    printf("Hello World");
+
+    int t;
+    cin>>t;
+    
+    while(t--)
+    {
+        unsigned long long int m=0;
+        cin>>m;
+        
+    //    int C[] ={0};
+    //    int F[] ={0};
+        
+        int i=0,c=0,f=0,p=0,count=0;
+        while(c >= f)
+        {
+            i++;
+            c +=m;
+            f += pow(2,(i-1));
+            
+        /*    if(p<(c-f))
+            p=c-f;
+            
+            else
+            {
+            cout<<"max profit day"<<i<<endl;
+            continue ;
+            }
+        */    
+            while(p<(c-f))
+            {
+                p=c-f;
+                count++;
+            }
+        }
+        cout<<"max days"<<i-1<<endl;
+        cout<<"max profit day"<<count<<endl;
+        
+        
+        
+    }
+    return 0;
+}

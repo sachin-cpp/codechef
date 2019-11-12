@@ -33,6 +33,7 @@ int main()
         }
         cout<<n-count-1<<endl;
             
+            
         
     }
     return 0;

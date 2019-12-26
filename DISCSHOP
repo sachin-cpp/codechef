@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<iostream>
+using namespace std ;
+int main()
+{
+    printf("Hello World");
+    int t=0;
+    cin>>t;
+    
+    
+    while(t--)
+    {
+        int n=0,j=0,min_n=0,cur_n=0;
+        cin>>n;
+        min_n = n/10;
+        for(int i=1;i<=n;i=i*10)
+        {
+            
+           // n/(i*10)=cur_n*i + j;
+            //n%(i*10)=j;
+            
+            cur_n = (n/(i*10))*i + j ;
+            j = n%(i*10);
+            cout<<cur_n<<endl;
+            
+            if(cur_n<min_n)
+            min_n=cur_n;
+            
+        }
+        cout<<"       "<<min_n<<endl;
+    }
+    return 0;
+}

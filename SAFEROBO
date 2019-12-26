@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include<iostream>
+using namespace std ;
+int main()
+{
+   
+    int t=0;
+    cin>>t;
+    
+    
+    while(t--)
+    {
+    string s;
+    cin>>s;
+    int l=0,sa,sb,ptr_A=0,ptr_B=0;
+    l=s.length();
+    
+    for(int i=1;i<=l;i++)
+    {
+        if(s[i]=='A')
+        ptr_A=i;
+        
+        else if(s[i]=='B')
+        ptr_B=i;
+        
+        //cout<<s[i];
+    } 
+    //cout<<endl;
+    cin>>sa>>sb;
+    //cout<<sa<<sb;
+    int loop=0,loop_A=0,loop_B=0;
+    loop_A = (l-ptr_A)/sa;
+    loop_B = (l-ptr_B)/sb;
+    
+    if(loop_A>loop_B)
+    loop=loop_A;
+    
+    else
+    loop=loop_B;
+    int count=0;
+    for(int i=0;i<loop ;i++)
+    {
+        ptr_A += sa;
+        ptr_B -= sb;
+        if(ptr_A==ptr_B)
+        continue;
+        
+        count++;
+    }
+    if(count==loop)
+    cout<<"safe"<<endl;
+    
+    else
+    cout<<"unsafe"<<endl;
+    
+    }
+    return 0;
+}

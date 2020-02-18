@@ -23,6 +23,7 @@ int main()
         if(count>0)
         goto aa ;
         
+        
         else
         cout<<z-a<<endl;
         

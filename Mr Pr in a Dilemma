@@ -1,0 +1,33 @@
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int a,b,c,d,e,f;
+        cin>>a>>b>>c>>d;
+        
+        if(a>b)
+        e=b-a;
+        else
+        e=a-b;
+        
+        if(c>d)
+        f=d-c;
+        else
+        f=c-d;
+        
+        if(e%f==0)
+        cout<<"YES"<<endl;
+        else
+        cout<<"NO"<<endl;
+            
+        
+    }
+
+    return 0;
+}

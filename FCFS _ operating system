@@ -10,6 +10,7 @@ using namespace std;
 //        A[i+1]=temp;
 //    }
     
+    
 int main()
 {
     

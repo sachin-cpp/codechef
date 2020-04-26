@@ -25,6 +25,7 @@ int main()
                 count++;
             }
             //cout<<s[i]<<count+1;
+           
             
             
             string c=to_string(count+1);

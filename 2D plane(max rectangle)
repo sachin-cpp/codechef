@@ -1,6 +1,7 @@
 //given  t number of coordinates in a 2d plane , you have to find the total number of squares or rectangles formed, parallel to both the axis. 
 
 
+
 #include <stdio.h>
 #include <iostream>
 using namespace std;

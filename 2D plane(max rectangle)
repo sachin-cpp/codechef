@@ -14,9 +14,7 @@ int main()
     for(int l=0;l<t;l++)
     {
         
-        cin>>X[l]>>Y[l];
-        
-        
+        cin>>X[l]>>Y[l];        
     }
     
     int count=0;

@@ -6,5 +6,6 @@
 | Number | Name of Problem | Contributed By |
 |-|-|-|
 |1.|[ChefAndFriends]()|[aviraw](https://github.com/aviraw)|
-
+|2.|[PlayingWithMatches]()|[aviraw](https://github.com/aviraw)|
+|3.|[WATSCORE]()|[aviraw](https://github.com/aviraw)|
 #
